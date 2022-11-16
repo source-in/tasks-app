@@ -257,7 +257,7 @@ function deleteData(id) {
 // get data method
   
 function getData() {
-                fetch("http://localhost:2000/tasks-app/v1/tasks/list").then(
+                fetch("https://source-tasks-app.herokuapp.com/list").then(
                     (res)=>res.json()
                 ).then((response)=>{
                     var tmpData  = "";
