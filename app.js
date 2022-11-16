@@ -23,10 +23,10 @@ app.listen(port, () => {
 /* you can pass your auth middleware from here if needed */
 Routes.TaskRoutes(app);
 
-// app.get("/tasks-app/v1/tasks", (_, res) => {
-//   console.log(_.params);
-//   res.send({
-//     type: "success",
-//     message: "success",
-//   });
-// });
+app.get("/tasks-app/v1/tasks", (_, res) => {
+  console.log(_.params);
+  res.send({
+    type: "success",
+    message: "success",
+  });
+});
