@@ -23,7 +23,7 @@ app.listen(port, () => {
 /* you can pass your auth middleware from here if needed */
 Routes.TaskRoutes(app);
 
-app.get("/https://source-tasks-app.herokuapp.com/", (_, res) => {
+app.get("/", (_, res) => {
   console.log(_.params);
   res.send({
     type: "success",
