@@ -216,8 +216,7 @@ function addUser() {
                 // clear input email and name
                 //console.log("Sucess")
                 clearFormData();
-                getData(); // reload table 
-                location.reload()
+                getData(); // reload table
         })
 }
 
@@ -234,7 +233,6 @@ function editData(id) {
             //setSuccessMessage(response.message)
                 clearFormData(); // clear the form field
                 getData() // reload the table
-                location.reload()
         })
 }
 
@@ -251,7 +249,6 @@ function deleteData(id) {
     )
     clearFormData();
     document.getElementById("drpdown").style.display = "none"
-    location.reload()
 }
 
 // get data method
