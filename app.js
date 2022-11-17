@@ -32,6 +32,4 @@ app.get("/", (_, res) => {
   //   message: "success",
   // });
   res.sendFile(path.join(__dirname+'/index.html'))
-  res.sendFile(path.join(__dirname+'/style.css'))
-  res.sendFile(path.join(__dirname+'/main.js'))
 });
